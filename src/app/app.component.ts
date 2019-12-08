@@ -28,10 +28,7 @@ export class AppComponent {
     this.formAuthors.renderForm(listForms);
   }
 
-  
-
   handleNamesSubmited(listNames: string[]): void {
-    console.log(listNames)
     this.listNamesAuthors = listNames;
   }
 

@@ -7,7 +7,6 @@ describe('FormNumberComponent', () => {
   let component: FormNumberComponent;
   let fixture: ComponentFixture<FormNumberComponent>;
   let compiled: any;
-  let formNumber: any;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -25,7 +24,6 @@ describe('FormNumberComponent', () => {
     fixture = TestBed.createComponent(FormNumberComponent);
     component = fixture.componentInstance;
     compiled = fixture.debugElement.nativeElement;
-    formNumber = fixture.debugElement.componentInstance;
     fixture.detectChanges();
   });
 

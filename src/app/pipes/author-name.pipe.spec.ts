@@ -12,8 +12,7 @@ class PipeTest {
 }
 
 describe('AuthorNamePipe', () => {
-
-  let component: any;
+  
   let fixture: ComponentFixture<PipeTest>;
 
   beforeEach(async(() => {
@@ -28,7 +27,6 @@ describe('AuthorNamePipe', () => {
   
   beforeEach(() => {
     fixture = TestBed.createComponent(PipeTest);
-    component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
