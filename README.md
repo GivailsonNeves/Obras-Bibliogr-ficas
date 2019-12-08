@@ -19,8 +19,64 @@ As seguintes regras devem ser seguidas nesta formatação:
 * "da", "de", "do", "das", "dos" não fazem parte do sobrenome e não iniciam por letra maiúscula.
 
 ## Tecnologias a serem utilizadas
+* Angular 7
+* Testes
 
 ## Procedimento para entrega
 Realize um fork deste repositório, desenvolva sua solução e encaminhe o seu repositório com o seu código. Arquivos compactados não serão aceitos.
 
 Altere o arquivo README para descrever quais componentes foram utilizados e como sua aplicação deverá ser executada.
+
+## Arquitetura do projeto
+```bash
+├── app
+    ├── utils
+        ├── author-util.ts
+    ├── pipes
+        ├── author-name.pipe.ts
+    ├── components
+        ├── authors-list
+        ├── form-authors
+        ├── form-number
+app.ts
+```
+
+Definições:
+
++ app.ts -> Componente principal, injeta os demais componentes e centraliza a lógica de fluxo da aplicação.
+
++ author-util.ts -> Classe util que centraliza o processo de lógica de formatação dos nomes dos autores.
+
++ author-name.pipe.ts -> Cria um pipe para permitir a formatação do nome do autor direto do html.
+
++ author-list (folder) -> Definições do componente responsável por exibir a listagem formatada dos nomes fornecidoes.
+
++ form-authors (folder) -> Componente responsável pela geração dinâmica dos formulários para os nomes.
+
++ form-number (folder) -> Componente para a captura do número de campos que serão utilizados para o preenchimento.
+
+## Executando o projeto
+
+1. Clonar o projeto e executar o seguinte comando dentro da pasta raiz:
+
+```bash 
+> npm install 
+```
+
+2. Para executar o projeto:
+
+```bash 
+> ng serve --o
+```
+
+3. Para executar a rotina de testes:
+
+```bash 
+> ng test 
+```
+
+4. Para executar a rotina de testes e visualizar a cobertura de código:
+
+```bash 
+> ng test --code-coverage
+```
