@@ -7,7 +7,7 @@
   </div>
   <div>
     <div class="form-button">
-      <button [disabled]="!totalNames && totalNames < 1" (click)="handleClick()">gerar campos</button>
+      <button [disabled]="!totalNames || totalNames < 1" (click)="handleClick()">gerar campos</button>
     </div>
   </div>
 </div>
