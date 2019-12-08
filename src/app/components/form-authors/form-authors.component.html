@@ -1,0 +1,15 @@
+<div class="form-authors">
+  <form *ngIf="listForms" [formGroup]="authorsFormGroup" (ngSubmit)="handleSubmit()">
+
+    <div *ngFor="let a of listForms" class="form-field">
+      <label>{{a.label}}:</label>
+      <input type="text" [formControlName]="a.name">
+    </div>
+
+    <div class="align-right">
+      <div class="form-button">
+        <button [disabled]="!authorsFormGroup.valid" type="submit">formatar nomes</button>
+      </div>
+    </div>
+  </form>
+</div>

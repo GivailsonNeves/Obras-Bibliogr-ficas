@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input, button {
+    box-sizing: border-box;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.form-field {
+    margin-bottom: 15px;
+    label {
+        display: block;
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 5px;
+    }
+    input {
+        display: block;
+        width: 100%;
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
+
+.form-button {
+    padding-top: 17px;
+
+    button {
+        width: 100%;
+    }
+}
+
+button {
+    display: block;
+    background-color: gray;
+    color: white;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+}

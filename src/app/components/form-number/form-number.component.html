@@ -1,0 +1,13 @@
+<div class="form-numeros">
+  <div>
+    <div class="form-field">
+      <label for="numAuthors">Número de Autores:</label>
+      <input type="number" min="0" [(ngModel)]="totalNames" name="numAuthors" id="numAuthors">
+    </div>
+  </div>
+  <div>
+    <div class="form-button">
+      <button [disabled]="!totalNames && totalNames < 1" (click)="handleClick()">gerar campos</button>
+    </div>
+  </div>
+</div>

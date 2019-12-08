@@ -1,0 +1,12 @@
+.form-numeros {
+  display: flex;
+  & > div {
+    &:first-child {
+      flex: 1;
+    }
+    &:last-child {
+      margin-left: 15px;
+      width: 150px;
+    }
+  }
+}
